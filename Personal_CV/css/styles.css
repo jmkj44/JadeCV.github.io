@@ -1,0 +1,98 @@
+* {
+    font-family: "Tahoma", monospace;
+}
+
+body {
+    background-color: rgb(255, 218, 248);
+    background-size: contain;
+}
+
+h1 {
+    color: #df00b6;
+}
+
+h2 {
+    color: #ff58e0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .portfolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.link {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+figcaption {
+    background-color: #ffbaf4;
+    width: 210px;
+    max-height: fit-content;
+    text-align: center;
+    color:#a10083;
+}
+
+img {
+    border: 5px outset rgb(255, 186, 242);
+    height: 200px;
+    width: 200px;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color:#a10083;
+}
+
+.navbar {
+    margin-right: 20px;
+    font-size: 150%;
+    padding: 5px;
+    background-color: #ffbaf4;
+}
+
+.navbar:hover {
+    background-color: #ffa0ef;
+}
